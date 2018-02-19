@@ -85,6 +85,7 @@ class Panel(Ui_MainWindow):
         self.checkBox_paint.setChecked(available_apps.as_bool('paint'))
         self.checkBox_blog.setChecked(available_apps.as_bool('blog'))
         self.checkBox_email.setChecked(available_apps.as_bool('email'))
+        self.checkBox_budzik.setChecked(available_apps.as_bool('calc'))
         self.checkBox_budzik.setChecked(available_apps.as_bool('budzik'))
         self.checkBox_exitButton.setChecked(available_apps.as_bool('exit_button'))
 
@@ -144,6 +145,7 @@ class Panel(Ui_MainWindow):
         self.checkBox_movie.toggled.connect(self.onCheckBox_movieToggled)
         self.checkBox_audio.toggled.connect(self.onCheckBox_audioToggled)
         self.checkBox_email.toggled.connect(self.onCheckBox_emailToggled)
+        self.checkBox_calc.toggled.connect(self.onCheckBox_calcToggled)
         self.checkBox_budzik.toggled.connect(self.onCheckBox_budzikToggled)
         self.checkBox_exitButton.toggled.connect(self.onCheckBox_exitButtonToggled)
         self.comboBox_input.currentIndexChanged[str].connect(self.onComboBox_inputCurrentIndexChanged)
@@ -203,6 +205,9 @@ class Panel(Ui_MainWindow):
 
     def onCheckBox_budzikToggled(self, checked):
         self._cache['available_apps']['budzik'] = checked
+
+    def onCheckBox_calcToggled(self, checked):
+        self._cache['available_apps']['calc'] = checked
 
     def onCheckBox_exitButtonToggled(self, checked):
         self._cache['available_apps']['exit_button'] = checked
