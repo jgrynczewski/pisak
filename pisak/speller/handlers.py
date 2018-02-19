@@ -529,7 +529,6 @@ def switch_toggled_state(button):
     else:
         button.set_toggled(True)
 
-
 def _previous_chars_on_select(keyboard_item, keyboard_panel, allowed_undo):
     if isinstance(keyboard_item, widgets.Key):
         try:
