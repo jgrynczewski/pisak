@@ -814,7 +814,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_row_2_box"],
         "scanning-hilite": true,
-	"sound": "3",
+	    "sound": "3",
         "strategy": {
             "id": "keyboard_row_2_group_strategy",
             "type": "PisakRowStrategy",
@@ -826,15 +826,15 @@
         "type": "PisakBoxLayout",
         "ratio_spacing": 0.0128,
         "children": [
-                        "key_2_10", "key_2_9", "key_2_8", "key_2_7",
-                        "key_2_6", "key_2_5", "key_2_4", "key_2_3",
-                        "key_2_2", "key_2_1"
+                        "key_2_9", "key_2_8", "key_2_7", "key_2_6",
+                        "key_2_5", "key_2_4", "key_2_3", "key_2_2",
+                        "key_2_1", "key_2_10"
                     ]
     },
     {
         "id": "key_2_1",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "A",
         "altgr-text": "Ą",
         "special1-text": ",",
@@ -845,7 +845,7 @@
     {
         "id": "key_2_2",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "S",
         "altgr-text": "Ś",
         "special1-text": ".",
@@ -856,9 +856,9 @@
     {
         "id": "key_2_3",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "D",
-        "special1-text": ";",
+        "special1-text": "-",
         "target": "text_box",
         "ratio-width": 0.048,
         "ratio-height": 0.085
@@ -866,7 +866,7 @@
     {
         "id": "key_2_4",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "F",
         "special1-text": ":",
         "target": "text_box",
@@ -876,7 +876,7 @@
     {
         "id": "key_2_5",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "G",
         "special1-text": "\"",
         "target": "text_box",
@@ -886,7 +886,7 @@
     {
         "id": "key_2_6",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "H",
         "special1-text": "!",
         "target": "text_box",
@@ -896,7 +896,7 @@
     {
         "id": "key_2_7",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "J",
         "special1-text": "\\",
         "target": "text_box",
@@ -906,7 +906,7 @@
     {
         "id": "key_2_8",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "K",
         "special1-text": "&",
         "target": "text_box",
@@ -916,7 +916,7 @@
     {
         "id": "key_2_9",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "L",
         "altgr-text": "Ł",
         "special1-text": "?",
@@ -925,7 +925,7 @@
         "ratio-height": 0.085
     },
     {
-	"id": "key_2_10",
+	    "id": "key_2_10",
         "type": "PisakButton",
         "style-class": "PisakBlogSpellerAboutMeButton",
         "label": " ",
@@ -946,7 +946,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_row_3_box"],
         "scanning-hilite": true,
-	"sound": "4",
+	    "sound": "4",
         "strategy": {
             "id": "keyboard_row_3_group_strategy",
             "type": "PisakRowStrategy",
@@ -958,15 +958,15 @@
         "type": "PisakBoxLayout",
         "ratio_spacing": 0.0128,
         "children": [
-                        "key_3_10", "key_3_9", "key_3_8", "key_3_7",
-                        "key_3_6", "key_3_5", "key_3_4", "key_3_3",
-                        "key_3_2", "key_3_1"
+                        "key_3_7", "key_3_6", "key_3_5", "key_3_4",
+                        "key_3_3", "key_3_2", "key_3_1", "key_3_10",
+                        "key_3_9", "key_3_8"
                     ]
     },
     {
         "id": "key_3_1",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "Z",
         "altgr-text": "Ż",
         "special1-text": "/",
@@ -977,7 +977,7 @@
     {
         "id": "key_3_2",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "X",
         "altgr-text": "Ź",
         "special1-text": "*",
@@ -988,7 +988,7 @@
     {
         "id": "key_3_3",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "C",
         "altgr-text": "Ć",
         "special1-text": "%",
@@ -999,7 +999,7 @@
     {
         "id": "key_3_4",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "V",
         "special1-text": "@",
         "target": "text_box",
@@ -1009,7 +1009,7 @@
     {
         "id": "key_3_5",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "B",
         "special1-text": "(",
         "target": "text_box",
@@ -1019,7 +1019,7 @@
     {
         "id": "key_3_6",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "N",
         "altgr-text": "Ń",
         "special1-text": ")",
@@ -1030,7 +1030,7 @@
     {
         "id": "key_3_7",
         "type": "PisakSpellerKey",
-	"style-class": "PisakBlogSpellerAboutMeKey",
+	    "style-class": "PisakBlogSpellerAboutMeKey",
         "default-text": "M",
         "special1-text": "=",
         "target": "text_box",
@@ -1072,8 +1072,8 @@
                    ]
     },
     {
-	"id": "key_3_10",
-	"type": "PisakButton",
+	    "id": "key_3_10",
+	    "type": "PisakButton",
         "style-class": "PisakBlogSpellerAboutMeButton",
         "label": " ",
         "ratio-width": 0.048,
