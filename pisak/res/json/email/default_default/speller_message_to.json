@@ -86,7 +86,7 @@
         "type": "PisakScanningGroup",
         "children": ["speller_menu_box"],
         "scanning-hilite": true,
-	"sound": "funkcje",
+	    "sound": "funkcje",
         "strategy": {
             "id": "menu_group_strategy",
             "type": "PisakRowStrategy",
@@ -109,7 +109,7 @@
         "children": [
             "button_exit", "button_6", "button_8",
             "button_5", "button_save", "button_4",
-	    "button_proceed", "button_2",
+	        "button_proceed", "button_2",
             "button_1", "menu_header"
                     ]
     },
@@ -306,7 +306,7 @@
         "type": "PisakScanningGroup",
         "children": ["prediction_panel_box"],
         "scanning-hilite": true,
-	"sound": "predykcja",
+	    "sound": "predykcja",
         "strategy": {
             "id": "prediction_group_strategy",
             "type": "PisakRowStrategy",
@@ -428,7 +428,7 @@
         "type": "PisakScanningGroup",
         "children": ["main_panel_box"],
         "scanning-hilite": true,
-	"sound": "litery",
+	    "sound": "litery",
         "strategy": {
             "id": "main_panel_group_strategy",
             "type": "PisakRowStrategy",
@@ -477,7 +477,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_menu_box"],
         "scanning-hilite": true,
-	"sound": "1",
+	    "sound": "1",
         "strategy": {
             "id": "keyboard_menu_group_strategy",
             "type": "PisakRowStrategy",
@@ -623,7 +623,7 @@
                    ]
     },
     {
-	"id": "keyboard_menu_button_8",
+	    "id": "keyboard_menu_button_8",
         "type": "PisakButton",
         "style-class": "PisakSpellerButton",
         "label": " ",
@@ -643,7 +643,7 @@
     {
         "id": "keyboard_menu_button_9",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "SZ",
         "special1-text": "+",
         "target": "text_box",
@@ -653,7 +653,7 @@
     {
         "id": "keyboard_menu_button_10",
         "type": "PisakButton",
-	"style-class": "PisakEmailSpellerMessageToButton",
+	    "style-class": "PisakEmailSpellerMessageToButton",
         "label": " ",
         "ratio-width": 0.048,
         "ratio-height": 0.085,
@@ -684,7 +684,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_row_1_box"],
         "scanning-hilite": true,
-	"sound": "2",
+	    "sound": "2",
         "strategy": {
             "id": "keyboard_row_1_group_strategy",
             "type": "PisakRowStrategy",
@@ -704,7 +704,7 @@
     {
         "id": "key_1_1",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "Q",
         "special1-text": "1",
         "target": "text_box",
@@ -714,7 +714,7 @@
     {
         "id": "key_1_2",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "W",
         "special1-text": "2",
         "target": "text_box",
@@ -724,7 +724,7 @@
     {
         "id": "key_1_3",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "E",
         "altgr-text": "Ę",
         "special1-text": "3",
@@ -735,7 +735,7 @@
     {
         "id": "key_1_4",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "R",
         "special1-text": "4",
         "target": "text_box",
@@ -745,7 +745,7 @@
     {
         "id": "key_1_5",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "T",
         "special1-text": "5",
         "target": "text_box",
@@ -755,7 +755,7 @@
     {
         "id": "key_1_6",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "Y",
         "special1-text": "6",
         "target": "text_box",
@@ -765,7 +765,7 @@
     {
         "id": "key_1_7",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "U",
         "special1-text": "7",
         "target": "text_box",
@@ -775,7 +775,7 @@
     {
         "id": "key_1_8",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "I",
         "special1-text": "8",
         "target": "text_box",
@@ -785,7 +785,7 @@
     {
         "id": "key_1_9",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "O",
         "altgr-text": "Ó",
         "special1-text": "9",
@@ -796,7 +796,7 @@
     {
         "id": "key_1_10",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "P",
         "special1-text": "0",
         "target": "text_box",
@@ -808,7 +808,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_row_2_box"],
         "scanning-hilite": true,
-	"sound": "3",
+	    "sound": "3",
         "strategy": {
             "id": "keyboard_row_2_group_strategy",
             "type": "PisakRowStrategy",
@@ -820,15 +820,15 @@
         "type": "PisakBoxLayout",
         "ratio_spacing": 0.0128,
         "children": [
-                        "key_2_10", "key_2_9", "key_2_8", "key_2_7",
+                        "key_2_9", "key_2_8", "key_2_7",
                         "key_2_6", "key_2_5", "key_2_4", "key_2_3",
-                        "key_2_2", "key_2_1"
+                        "key_2_2", "key_2_1", "key_2_10"
                     ]
     },
     {
         "id": "key_2_1",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "A",
         "altgr-text": "Ą",
         "special1-text": ",",
@@ -839,7 +839,7 @@
     {
         "id": "key_2_2",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "S",
         "altgr-text": "Ś",
         "special1-text": ".",
@@ -850,9 +850,9 @@
     {
         "id": "key_2_3",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "D",
-        "special1-text": ";",
+        "special1-text": "-",
         "target": "text_box",
         "ratio-width": 0.048,
         "ratio-height": 0.085
@@ -860,7 +860,7 @@
     {
         "id": "key_2_4",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "F",
         "special1-text": ":",
         "target": "text_box",
@@ -870,7 +870,7 @@
     {
         "id": "key_2_5",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "G",
         "special1-text": "\"",
         "target": "text_box",
@@ -880,7 +880,7 @@
     {
         "id": "key_2_6",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "H",
         "special1-text": "!",
         "target": "text_box",
@@ -890,7 +890,7 @@
     {
         "id": "key_2_7",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "J",
         "special1-text": "\\",
         "target": "text_box",
@@ -900,7 +900,7 @@
     {
         "id": "key_2_8",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "K",
         "special1-text": "&",
         "target": "text_box",
@@ -910,7 +910,7 @@
     {
         "id": "key_2_9",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "L",
         "altgr-text": "Ł",
         "special1-text": "?",
@@ -919,7 +919,7 @@
         "ratio-height": 0.085
     },
     {
-	"id": "key_2_10",
+	    "id": "key_2_10",
         "type": "PisakButton",
         "style-class": "PisakEmailSpellerMessageToButton",
         "label": " ",
@@ -940,7 +940,7 @@
         "type": "PisakScanningGroup",
         "children": ["keyboard_row_3_box"],
         "scanning-hilite": true,
-	"sound": "4",
+	    "sound": "4",
         "strategy": {
             "id": "keyboard_row_3_group_strategy",
             "type": "PisakRowStrategy",
@@ -952,15 +952,16 @@
         "type": "PisakBoxLayout",
         "ratio_spacing": 0.0128,
         "children": [
-                        "key_3_10", "key_3_9", "key_3_8", "key_3_7",
+                        "key_3_7",
                         "key_3_6", "key_3_5", "key_3_4", "key_3_3",
-                        "key_3_2", "key_3_1"
+                        "key_3_2", "key_3_1", "key_3_10", "key_3_9",
+                        "key_3_8"
                     ]
     },
     {
         "id": "key_3_1",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "Z",
         "altgr-text": "Ż",
         "special1-text": "/",
@@ -971,7 +972,7 @@
     {
         "id": "key_3_2",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "X",
         "altgr-text": "Ź",
         "special1-text": "*",
@@ -982,7 +983,7 @@
     {
         "id": "key_3_3",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "C",
         "altgr-text": "Ć",
         "special1-text": "%",
@@ -993,7 +994,7 @@
     {
         "id": "key_3_4",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "V",
         "special1-text": "@",
         "target": "text_box",
@@ -1003,7 +1004,7 @@
     {
         "id": "key_3_5",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "B",
         "special1-text": "(",
         "target": "text_box",
@@ -1013,7 +1014,7 @@
     {
         "id": "key_3_6",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "N",
         "altgr-text": "Ń",
         "special1-text": ")",
@@ -1024,7 +1025,7 @@
     {
         "id": "key_3_7",
         "type": "PisakSpellerKey",
-	"style-class": "PisakEmailSpellerMessageToKey",
+	    "style-class": "PisakEmailSpellerMessageToKey",
         "default-text": "M",
         "special1-text": "=",
         "target": "text_box",
@@ -1066,8 +1067,8 @@
                    ]
     },
     {
-	"id": "key_3_10",
-	"type": "PisakButton",
+	    "id": "key_3_10",
+	    "type": "PisakButton",
         "style-class": "PisakEmailSpellerMessageToButton",
         "label": " ",
         "ratio-width": 0.048,
