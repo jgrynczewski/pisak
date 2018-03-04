@@ -37,7 +37,7 @@
 	    "style-class": "PisakSpellerText",
         "x-align": "start",
         "ratio-width": 0.9,
-        "ratio-height": 0.26
+        "ratio-height": 0.32
     },
     {
         "id": "pop_up_scanning_group",
@@ -73,13 +73,13 @@
         "ratio_spacing": 0.15,
         "orientation": "horizontal",
         "children": [
-                        "main_panel", "speller_menu"
+                        "main_panel", "calc_menu"
                     ]
     },
     {
-        "id": "speller_menu",
+        "id": "calc_menu",
         "type": "PisakScanningGroup",
-        "children": ["speller_menu_box"],
+        "children": ["calc_menu_box"],
         "scanning-hilite": true,
 	    "sound": "funkcje",
         "strategy": {
@@ -89,7 +89,7 @@
         }
     },
     {
-        "id": "speller_menu_box",
+        "id": "calc_menu_box",
         "type": "PisakBoxLayout",
         "orientation": "vertical",
         "y-align": "center",
@@ -105,13 +105,14 @@
         "id": "button_1",
         "type": "PisakButton",
         "style-class": "PisakSpellerButton",
-        "text": "LITERY",
+        "text": "KALKULATOR",
+	"sound": "kalkulator",
         "x-align": "start",
         "ratio-width": 0.2,
         "ratio-height": 0.085,
         "icon-size": -1,
-        "label": "LITERY",
-        "icon-name": "klawiatura",
+        "label": "KALKULATOR",
+        "icon-name": "calculator",
         "disabled_when": "scanning_off",
         "signals": [
 			{
@@ -136,11 +137,11 @@
 	    {
 		    "name": "clicked",
 		    "handler": "general/kill_group",
-		    "object": "speller_menu"
+		    "object": "calc_menu"
 	    },
             {
                 "name": "clicked",
-                "handler": "speller/text_to_speech",
+                "handler": "calc/text_to_speech",
                 "object": "text_box"
             }
         ]
@@ -159,7 +160,7 @@
         "signals": [
                        {
                            "name": "clicked",
-                           "handler": "speller/new_document",
+                           "handler": "calc/new_document",
                            "object": "text_box"
                        }
                    ]
@@ -181,7 +182,7 @@
         "type": "PisakScanningGroup",
         "children": ["main_panel_box"],
         "scanning-hilite": true,
-	    "sound": "litery",
+	    "sound": "kalkulator",
         "strategy": {
             "id": "main_panel_group_strategy",
             "type": "PisakRowStrategy",
@@ -237,7 +238,7 @@
         "signals": [
                        {
                            "name": "clicked",
-                           "handler": "speller/undo",
+                           "handler": "calc/undo",
                            "object": "text_box"
                        }
                    ]
@@ -254,7 +255,7 @@
         "signals": [
                        {
                            "name": "clicked",
-                           "handler": "speller/nav_left",
+                           "handler": "calc/nav_left",
                            "object": "text_box"
                        }
                    ]
@@ -271,7 +272,8 @@
         "signals": [
                        {
                            "name": "clicked",
-                           "handler": "speller/nav_right",
+                           "handler": "calc/nav_right",
+                           "handler": "calc/nav_right",
                            "object": "text_box"
                        }
                    ]
@@ -290,7 +292,7 @@
             {
                 "name": "clicked",
                 "handler": "scanning/set_pending_group",
-                "object": "speller_menu"
+                "object": "calc_menu"
             }
         ]
     },
@@ -330,7 +332,8 @@
     {
         "id": "key_1_1",
         "type": "PisakSpellerKey",
-        "default-text": "/",
+        "label": "/",
+	"sound": "dzielic",
         "special1-text": "1",
         "target": "text_box",
         "ratio-width": 0.048,
@@ -368,7 +371,7 @@
         "signals": [
                        {
                            "name": "clicked",
-                           "handler": "speller/backspace",
+                           "handler": "calc/backspace",
                            "object": "text_box"
                        }
                    ]
@@ -398,7 +401,8 @@
     {
         "id": "key_2_1",
         "type": "PisakSpellerKey",
-        "default-text": "*",
+        "label": "*",
+	"sound": "mnozenie",
         "altgr-text": "Ą",
         "special1-text": ",",
         "target": "text_box",
@@ -457,7 +461,8 @@
     {
         "id": "key_3_1",
         "type": "PisakSpellerKey",
-        "default-text": "-",
+        "label": "-",
+	"sound": "odejmowanie",
         "altgr-text": "Ż",
         "special1-text": "/",
         "target": "text_box",
@@ -517,7 +522,8 @@
     {
         "id": "key_4_1",
         "type": "PisakSpellerKey",
-        "default-text": "+",
+        "label": "+",
+	"sound": "dodawanie",
         "altgr-text": "Ż",
         "special1-text": "/",
         "target": "text_box",
@@ -579,6 +585,7 @@
         "type": "PisakButton",
         "style-class": "PisakSpellerButton",
         "label": "=",
+	"sound": "rowna_sie",
         "ratio-width": 0.048,
         "ratio-height": 0.085,
         "icon-size": -1,
@@ -595,6 +602,7 @@
         "type": "PisakButton",
         "style-class": "PisakSpellerButton",
         "label": " ",
+	"sound": "pierwiastek",
         "ratio-width": 0.048,
         "ratio-height": 0.085,
         "icon-size": -1,
@@ -612,6 +620,7 @@
         "id": "key_5_3",
         "type": "PisakSpellerKey",
         "default-text": ".",
+	"sound": "kropka",
         "altgr-text": "Ć",
         "special1-text": "%",
         "target": "text_box",

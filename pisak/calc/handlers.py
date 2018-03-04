@@ -6,10 +6,10 @@ import os
 
 import pisak
 from pisak import signals, sound_effects
-from pisak.speller import widgets, documents_manager
+from pisak.calc import widgets
 
 
-@signals.registered_handler("speller/scroll_up")
+@signals.registered_handler("calc/scroll_up")
 def scroll_up(text_box):
     """
     Scroll the text field up.
@@ -19,7 +19,7 @@ def scroll_up(text_box):
     text_box.scroll_up()
 
 
-@signals.registered_handler("speller/scroll_down")
+@signals.registered_handler("calc/scroll_down")
 def scroll_down(text_box):
     """
     Scroll the text field down.
@@ -29,7 +29,7 @@ def scroll_down(text_box):
     text_box.scroll_down()
 
 
-@signals.registered_handler("speller/undo")
+@signals.registered_handler("calc/undo")
 def undo(text_box):
     """
     Undo the last operation applied to a text box.
@@ -39,7 +39,7 @@ def undo(text_box):
     text_box.revert_operation()
 
 
-@signals.registered_handler("speller/nav_right")
+@signals.registered_handler("calc/nav_right")
 def nav_right(text_box):
     """
     Move text cursor forward for one position.
@@ -49,7 +49,7 @@ def nav_right(text_box):
     text_box.move_cursor_forward()
 
 
-@signals.registered_handler("speller/nav_left")
+@signals.registered_handler("calc/nav_left")
 def nav_left(text_box):
     """
     Move text cursor backward for one position.
@@ -58,7 +58,7 @@ def nav_left(text_box):
     """
     text_box.move_cursor_backward()
 
-@signals.registered_handler("speller/new_document")
+@signals.registered_handler("calc/new_document")
 def new_document(text_box):
     """
     Remove the whole text from the text buffer and clear the text box.
@@ -68,7 +68,7 @@ def new_document(text_box):
     text_box.clear_all()
 
 
-@signals.registered_handler("speller/text_to_speech")
+@signals.registered_handler("calc/text_to_speech")
 def text_to_speech(text_box):
     """
     Read the text loud.
@@ -85,7 +85,7 @@ def text_to_speech(text_box):
             synth.read()
 
 
-@signals.registered_handler("speller/backspace")
+@signals.registered_handler("calc/backspace")
 def backspace(text_box):
     """
     Delete the one last character from the text buffer.
@@ -95,7 +95,7 @@ def backspace(text_box):
     text_box.delete_char()
 
 
-@signals.registered_handler("speller/space")
+@signals.registered_handler("calc/space")
 def space(text_box):
     """
     Insert space in the end of the text buffer.
@@ -105,7 +105,7 @@ def space(text_box):
 
     text_box.type_text(" ")
 
-@signals.registered_handler("speller/enter")
+@signals.registered_handler("calc/enter")
 def enter(text_box):
     """
     Insert enter in the end of the text buffer.
@@ -115,7 +115,7 @@ def enter(text_box):
     text_box.move_to_new_line()
 
 
-@signals.registered_handler("speller/new_line")
+@signals.registered_handler("calc/new_line")
 def new_line(text_box):
     """
     Begin a new line of text.
@@ -124,7 +124,7 @@ def new_line(text_box):
     """
     text_box.move_to_new_line()
 
-@signals.registered_handler("speller/unset_toggled_state_on_select")
+@signals.registered_handler("calc/unset_toggled_state_on_select")
 def unset_toggled_state_on_select(button):
     """
     Automatically unset toggled state of the button after selecting one
@@ -143,7 +143,7 @@ def unset_toggled_state_on_select(button):
         key.connect_object("clicked", unset_toggled_state, button)
 
 
-@signals.registered_handler("speller/unset_toggled_state")
+@signals.registered_handler("calc/unset_toggled_state")
 def unset_toggled_state(button):
     """
     Unset toggled state of the button.
@@ -165,7 +165,7 @@ def unset_toggled_state(button):
         pass
 
 
-@signals.registered_handler("speller/set_toggled_state")
+@signals.registered_handler("calc/set_toggled_state")
 def set_toggled_state(button):
     """
     Set toggled state of the button.
@@ -176,7 +176,7 @@ def set_toggled_state(button):
         button.set_toggled(True)
 
 
-@signals.registered_handler("speller/switch_toggled_state")
+@signals.registered_handler("calc/switch_toggled_state")
 def switch_toggled_state(button):
     """
     Set or unset toggled state of the button.

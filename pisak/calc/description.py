@@ -3,8 +3,8 @@ Descriptor for Speller application.
 """
 
 from pisak import res, handlers
-from pisak.speller import widgets  # @UnusedImport
-import pisak.speller.handlers  # @UnusedImport
+from pisak.calc import widgets  # @UnusedImport
+import pisak.calc.handlers  # @UnusedImport
 
 
 def prepare_main_view(app, window, script, data):
