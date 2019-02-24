@@ -7,7 +7,7 @@
                         "type": "PisakRowStrategy"
                     },
         "children": [
-                       "basic_main_box", "background_box"
+            "basic_main_box", "background_box", "note_box"
                     ]
     },
     {
@@ -15,6 +15,25 @@
         "type": "PisakBackgroundPattern",
         "x-expand": true,
         "y-expand": true
+    },
+
+   {
+        "id": "note_box",
+        "type": "PisakBoxLayout",
+        "orientation": "vertical",
+        "ratio_margin_top": 0.92,
+        "ratio_margin_left": 0.85,
+        "ratio-spacing": 0.0136,
+        "children": [
+                         "calc_header"
+                    ]
+    },
+ 
+    {
+	"id": "calc_header",
+	"type": "PisakLabel",
+	"style-class": "PisakCalcAboutMeHeader",
+	"text": "Aplikacja sponsorowana \nprzez Janusza Stefańskiego."
     },
     {
 	    "id": "CursoredText",

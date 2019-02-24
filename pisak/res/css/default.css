@@ -1603,6 +1603,13 @@ MxLabel.PisakBudzikLabel {
     color: black;
 }
 
+/* CALC */
+MxLabel.PisakCalcAboutMeHeader {
+   color: black;
+   font-size: 10px;
+   font-weight: bold;
+   font-family: Kelson Sans;
+}
 
 /* OBCI */
 
