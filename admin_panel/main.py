@@ -82,6 +82,7 @@ class Panel(Ui_MainWindow):
         self.checkBox_viewer.setChecked(available_apps.as_bool('viewer'))
         self.checkBox_audio.setChecked(available_apps.as_bool('audio'))
         self.checkBox_movie.setChecked(available_apps.as_bool('movie'))
+        self.checkBox_movie2.setChecked(available_apps.as_bool('movie2'))
         self.checkBox_paint.setChecked(available_apps.as_bool('paint'))
         self.checkBox_blog.setChecked(available_apps.as_bool('blog'))
         self.checkBox_email.setChecked(available_apps.as_bool('email'))
@@ -143,6 +144,7 @@ class Panel(Ui_MainWindow):
         self.checkBox_symboler.toggled.connect(self.onCheckBox_symbolerToggled)
         self.checkBox_paint.toggled.connect(self.onCheckBox_paintToggled)
         self.checkBox_movie.toggled.connect(self.onCheckBox_movieToggled)
+        self.checkBox_movie2.toggled.connect(self.onCheckBox_movie2Toggled)
         self.checkBox_audio.toggled.connect(self.onCheckBox_audioToggled)
         self.checkBox_email.toggled.connect(self.onCheckBox_emailToggled)
         self.checkBox_calc.toggled.connect(self.onCheckBox_calcToggled)
@@ -214,6 +216,9 @@ class Panel(Ui_MainWindow):
 
     def onCheckBox_movieToggled(self, checked):
         self._cache['available_apps']['movie'] = checked
+
+    def onCheckBox_movie2Toggled(self, checked):
+        self._cache['available_apps']['movie2'] = checked
 
     def onCheckBox_audioToggled(self, checked):
         self._cache['available_apps']['audio'] = checked

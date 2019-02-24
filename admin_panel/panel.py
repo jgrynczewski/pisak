@@ -73,6 +73,11 @@ class Ui_MainWindow(object):
         self.checkBox_movie = QtWidgets.QCheckBox(self.horizontalLayoutWidget)
         self.checkBox_movie.setObjectName("checkBox_movie")
         self.verticalLayout.addWidget(self.checkBox_movie)
+
+        self.checkBox_movie2 = QtWidgets.QCheckBox(self.horizontalLayoutWidget)
+        self.checkBox_movie2.setObjectName("checkBox_movie2")
+        self.verticalLayout.addWidget(self.checkBox_movie2)
+
         self.checkBox_audio = QtWidgets.QCheckBox(self.horizontalLayoutWidget)
         self.checkBox_audio.setObjectName("checkBox_audio")
         self.verticalLayout.addWidget(self.checkBox_audio)
@@ -610,6 +615,7 @@ class Ui_MainWindow(object):
         self.label_availableApps.setText(_translate("MainWindow", "Dostępne aplikacje"))
         self.checkBox_symboler.setText(_translate("MainWindow", "komunikator symboliczny"))
         self.checkBox_movie.setText(_translate("MainWindow", "odtwarzacz filmów"))
+        self.checkBox_movie2.setText(_translate("MainWindow", "odtwarzacz filmów 2"))
         self.checkBox_audio.setText(_translate("MainWindow", "odtwarzacz muzyki"))
         self.checkBox_viewer.setText(_translate("MainWindow", "przeglądarka zdjęć"))
         self.checkBox_speller.setText(_translate("MainWindow", "edytor tekstu"))
